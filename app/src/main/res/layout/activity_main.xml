@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Main.MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:background="@color/purple_500"
+            map:layout_constraintEnd_toEndOf="parent"
+            map:layout_constraintStart_toStartOf="parent"
+            map:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/openMenuIcon"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="8dp"
+                android:src="@drawable/ic_menu"
+                map:layout_constraintBottom_toBottomOf="parent"
+                map:layout_constraintStart_toStartOf="parent"
+                map:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="Uber-Taksi"
+                android:textSize="22sp"
+                android:textColor="@color/white"
+                map:layout_constraintBottom_toBottomOf="parent"
+                map:layout_constraintStart_toEndOf="@+id/openMenuIcon"
+                map:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/directionLayout"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="16dp"
+            android:visibility="invisible"
+            android:background="@drawable/direction_text_bg"
+            android:translationZ="2dp"
+            map:layout_constraintBottom_toBottomOf="parent"
+            map:layout_constraintEnd_toEndOf="parent"
+            map:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:id="@+id/targetDirectionText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="Uber"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                map:layout_constraintBottom_toBottomOf="parent"
+                map:layout_constraintStart_toEndOf="@+id/directionRemoveButton"
+                map:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/directionRemoveButton"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="16dp"
+                android:rotation="45"
+                android:src="@drawable/ic_direction_exit"
+                map:layout_constraintBottom_toBottomOf="parent"
+                map:layout_constraintStart_toStartOf="parent"
+                map:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/directionMetreText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="350 METRE"
+                map:layout_constraintBottom_toBottomOf="@+id/targetDirectionText"
+                map:layout_constraintStart_toEndOf="@+id/targetDirectionText"
+                map:layout_constraintTop_toTopOf="@+id/targetDirectionText" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            map:layout_constraintBottom_toBottomOf="parent"
+            map:layout_constraintEnd_toEndOf="parent"
+            map:layout_constraintStart_toStartOf="parent"
+            map:layout_constraintTop_toBottomOf="@+id/constraintLayout2"
+            tools:layout="@layout/activity_main" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigationView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        map:menu="@menu/map_menu"
+        map:headerLayout="@layout/main_menu_header"/>
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

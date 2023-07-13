@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/carImage"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/taksi" />
+
+    <TextView
+        android:id="@+id/carText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Taksi"
+        android:textColor="#202020"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/carImage"
+        app:layout_constraintTop_toTopOf="@+id/carImage" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/bottomSheetCloseButton"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_close" />
+
+    <TextView
+        android:id="@+id/carMesafeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="500 metre"
+        app:layout_constraintBottom_toBottomOf="@+id/carMesafeText0"
+        app:layout_constraintStart_toEndOf="@+id/carMesafeText0"
+        app:layout_constraintTop_toTopOf="@+id/carMesafeText0" />
+
+    <TextView
+        android:id="@+id/carMesafeText0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Mesafe: "
+        app:layout_constraintStart_toStartOf="@+id/carText"
+        app:layout_constraintTop_toBottomOf="@+id/carText" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/taksiUberTopText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/akaya_telivigala"
+        android:text="Taksi"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/yolTarifiButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Yol Tarifi"
+        app:layout_constraintStart_toStartOf="@+id/carMesafeText0"
+        app:layout_constraintTop_toBottomOf="@+id/carMesafeText0" />
+</androidx.constraintlayout.widget.ConstraintLayout>

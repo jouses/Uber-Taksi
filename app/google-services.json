@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "954342607280",
+    "project_id": "uber-taksi-8879c",
+    "storage_bucket": "uber-taksi-8879c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:954342607280:android:5279761478832cac83ae75",
+        "android_client_info": {
+          "package_name": "com.jouse.uber_taksi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "954342607280-26f85m4tuljg2t1rk83404k2v96uem8e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_cV_XOy6VeNdJn3yND60b5iMQoA0Y5ng"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "954342607280-26f85m4tuljg2t1rk83404k2v96uem8e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

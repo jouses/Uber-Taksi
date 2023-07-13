@@ -1,0 +1,78 @@
+[
+  {
+    "Uber" : false,
+    "Marka" : "taksi",
+    "latitude" : 40.759815,
+    "longitude" : 29.906932
+  },
+
+  {
+    "Uber" : false,
+    "Marka" : "taksi",
+    "latitude" : 40.769036,
+    "longitude" : 29.941900
+  },
+
+  {
+    "Uber" : false,
+    "Marka" : "taksi",
+    "latitude" : 40.744843,
+    "longitude" : 29.976339
+  },
+
+  {
+    "Uber" : false,
+    "Marka" : "taksi",
+    "latitude" : 40.792247,
+    "longitude" : 29.961812
+  },
+
+  {
+    "Uber" : false,
+    "Marka" : "taksi",
+    "latitude" : 40.767850,
+    "longitude" : 29.964070
+  },
+
+  {
+    "Uber" : true,
+    "Marka" : "volvo",
+    "latitude" : 40.777690,
+    "longitude" : 29.917989
+  },
+
+  {
+    "Uber" : true,
+    "Marka" : "volvo",
+    "latitude" : 40.730635,
+    "longitude" : 29.988458
+  },
+
+  {
+    "Uber" : true,
+    "Marka" : "ford",
+    "latitude" : 40.749215,
+    "longitude" : 29.959124
+  },
+
+  {
+    "Uber" : true,
+    "Marka" : "mercedes",
+    "latitude" : 40.727234,
+    "longitude" : 29.959653
+  },
+
+  {
+    "Uber" : true,
+    "Marka" : "mercedes",
+    "latitude" : 40.758025,
+    "longitude" : 29.992104
+  },
+
+  {
+    "Uber" : true,
+    "Marka" : "ford",
+    "latitude" : 40.771003,
+    "longitude" : 29.985488
+  }
+]
